@@ -12,7 +12,7 @@ const RideDetailsScreen = ({ route, navigation }: any) => {
     state.rideRequests.requests.find((r: any) => r.id === rideId)
   );
 
-  // Handle accepting the ride
+  //  Handle accepting the ride
   const handleAccept = () => {
     dispatch(updateRideStatus({ rideId, status: 'accepted' }));
     navigation.goBack();
